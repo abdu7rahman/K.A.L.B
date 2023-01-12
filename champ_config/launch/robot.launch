@@ -1,0 +1,20 @@
+<launch>
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <env name="GAZEBO_MODEL_PATH" value="${GAZEBO_MODEL_PATH}:$(find warehouse_simulation)/models"/>
+  <env name="GAZEBO_RESOURCE_PATH" value="${GAZEBO_RESOURCE_PATH}:$(find warehouse_simulation)/models"/>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find warehouse_simulation)/worlds/warehouse.world"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="recording" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+  <param name="robot_description" textfile="$(find champ_description)/urdf/champ.urdf"/>
+
+<!-- Spawn dd_robot into Gazebo -->
+  <node name="spawn_urdf" pkg="gazebo_ros"
+        type="spawn_model" output="screen"
+        args="-file $(find champ_description)/urdf/champ.urdf -urdf -x 0 -y 0 -z -0 -model champ"/>
+        
+</launch>
