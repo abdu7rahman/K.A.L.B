@@ -1,0 +1,35 @@
+"":
+  joint_states_controller:
+      type: joint_state_controller/JointStateController
+      publish_rate: 100
+
+  joint_group_position_controller:
+      type: effort_controllers/JointTrajectoryController
+      publish_rate: 100
+      joints:
+          - lf_joint
+          - lf1_joint
+          - lf2_joint
+          - rf_joint
+          - rf1_joint
+          - rf2_joint
+          - lb_joint
+          - lb1_joint
+          - lb2_joint
+          - rb_joint
+          - rb1_joint
+          - rb2_joint
+
+      gains:
+        lf_joint : {p: 180, d: 0.9, i: 20}
+        lf1_joint : {p: 180, d: 0.9, i: 20}
+        lf2_joint : {p: 180, d: 0.9, i: 20}
+        rf_joint : {p: 180, d: 0.9, i: 20}
+        rf1_joint : {p: 180, d: 0.9, i: 20}
+        rf2_joint : {p: 180, d: 0.9, i: 20}
+        lb_joint : {p: 180, d: 0.9, i: 20}
+        lb1_joint : {p: 180, d: 0.9, i: 20}
+        lb2_joint : {p: 180, d: 0.9, i: 20}
+        rb_joint : {p: 180, d: 0.9, i: 20}
+        rb1_joint : {p: 180, d: 0.9, i: 20}
+        rb2_joint : {p: 180, d: 0.9, i: 20}

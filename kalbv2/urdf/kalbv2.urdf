@@ -1,0 +1,1220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="kalbv2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0097914 0.00030128 -0.011478"
+        rpy="0 0 0" />
+      <mass
+        value="0.74216" />
+      <inertia
+        ixx="0.00046812"
+        ixy="1.2623E-07"
+        ixz="-2.5606E-08"
+        iyy="0.00095107"
+        iyz="4.2141E-08"
+        izz="0.0012083" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="lf_link">
+    <inertial>
+      <origin
+        xyz="0.0411894863582298 0.0263096711026673 0.00100433318374624"
+        rpy="0 0 0" />
+      <mass
+        value="0.0457711594663494" />
+      <inertia
+        ixx="5.80031021119984E-06"
+        ixy="-4.36565777588689E-08"
+        ixz="-1.08755403204597E-07"
+        iyy="1.83279109478437E-05"
+        iyz="-9.71526097366566E-08"
+        izz="1.64781781366681E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/lf_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/lf_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lf_joint"
+    type="revolute">
+    <origin
+      xyz="0.07345 0.034003 -0.0101"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lf_link" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="lf1_link">
+    <inertial>
+      <origin
+        xyz="0.00146641714933987 0.00187274220879018 -0.0484352113910952"
+        rpy="0 0 0" />
+      <mass
+        value="0.019695847303043" />
+      <inertia
+        ixx="2.88832337959113E-05"
+        ixy="2.44998613442871E-09"
+        ixz="9.16345786996349E-07"
+        iyy="2.97221572105929E-05"
+        iyz="-7.65652022112889E-08"
+        izz="1.01608242242567E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/lf1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/lf1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lf1_joint"
+    type="revolute">
+    <origin
+      xyz="0.0261 0.024847 -0.00012167"
+      rpy="0 0 0" />
+    <parent
+      link="lf_link" />
+    <child
+      link="lf1_link" />
+    <axis
+      xyz="0 1 -0.0028881" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="lf2_link">
+    <inertial>
+      <origin
+        xyz="-0.000285478938898444 0.00356810890904931 -0.0409474323600445"
+        rpy="0 0 0" />
+      <mass
+        value="0.00817653849269387" />
+      <inertia
+        ixx="1.02248081977029E-05"
+        ixy="-1.80952298852927E-09"
+        ixz="-7.01963860972266E-08"
+        iyy="1.02533383271222E-05"
+        iyz="-2.59563078323817E-07"
+        izz="1.60021499787984E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/lf2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/lf2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lf2_joint"
+    type="revolute">
+    <origin
+      xyz="0.0032307 0.0039169 -0.10496"
+      rpy="0 0 0" />
+    <parent
+      link="lf1_link" />
+    <child
+      link="lf2_link" />
+    <axis
+      xyz="0 1 -0.0028881" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="lf3_link">
+    <inertial>
+      <origin
+        xyz="5.42653388523745E-06 2.24737239629125E-06 0.000778147966473797"
+        rpy="0 0 0" />
+      <mass
+        value="0.000109464869023519" />
+      <inertia
+        ixx="2.47395745223825E-09"
+        ixy="2.25846873200789E-14"
+        ixz="7.81990049428514E-12"
+        iyy="1.88248835605242E-09"
+        iyz="4.94666732137918E-12"
+        izz="3.59524722790221E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/lf3_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/lf3_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lf3_joint"
+    type="fixed">
+    <origin
+      xyz="-0.00072509 0.0046997 -0.10399"
+      rpy="0 0 0" />
+    <parent
+      link="lf2_link" />
+    <child
+      link="lf3_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rf_link">
+    <inertial>
+      <origin
+        xyz="0.0411894863651799 -0.026315000546312 0.00085336096004064"
+        rpy="0 0 0" />
+      <mass
+        value="0.0457711594674265" />
+      <inertia
+        ixx="5.80056057961725E-06"
+        ixy="4.43005033447203E-08"
+        ixz="-1.10896326733357E-07"
+        iyy="1.83267352047483E-05"
+        iyz="1.07760767315586E-07"
+        izz="1.64791035067312E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/rf_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/rf_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rf_joint"
+    type="revolute">
+    <origin
+      xyz="0.07345 -0.034004 -0.0101"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rf_link" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rf1_link">
+    <inertial>
+      <origin
+        xyz="0.000138339739323465 -0.0015946232000931 -0.0484641191582759"
+        rpy="0 0 0" />
+      <mass
+        value="0.019695847303043" />
+      <inertia
+        ixx="2.89135501549164E-05"
+        ixy="-9.63926545534492E-10"
+        ixz="1.14774703838775E-07"
+        iyy="2.97203313783415E-05"
+        iyz="2.41522056998708E-07"
+        izz="9.87591895671904E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/rf1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/rf1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rf1_joint"
+    type="revolute">
+    <origin
+      xyz="0.0261 -0.024846 -0.00026422"
+      rpy="0 0 0" />
+    <parent
+      link="rf_link" />
+    <child
+      link="rf1_link" />
+    <axis
+      xyz="0 0.99996 0.0086257" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rf2_link">
+    <inertial>
+      <origin
+        xyz="0.000882722104496705 -0.0033322960133169 -0.041061378467503"
+        rpy="0 0 0" />
+      <mass
+        value="0.00817653849269366" />
+      <inertia
+        ixx="1.02205823769774E-05"
+        ixy="-6.86541360363269E-09"
+        ixz="2.17775262824226E-07"
+        iyy="1.0250028682207E-05"
+        iyz="3.17372149505452E-07"
+        izz="1.6755696542826E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/rf2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/rf2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rf2_joint"
+    type="revolute">
+    <origin
+      xyz="0.00043479 -0.003315 -0.10493"
+      rpy="0 0 0" />
+    <parent
+      link="rf1_link" />
+    <child
+      link="rf2_link" />
+    <axis
+      xyz="0 0.99996 -0.0086257" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rf3_link">
+    <inertial>
+      <origin
+        xyz="-1.68414057005462E-05 -6.71066735428993E-06 0.000777958925360367"
+        rpy="0 0 0" />
+      <mass
+        value="0.000109464869023517" />
+      <inertia
+        ixx="2.47442817893787E-09"
+        ixy="2.09296094558731E-13"
+        ixz="-2.42634236206615E-11"
+        iyy="1.88260146969171E-09"
+        iyz="-1.47693311135484E-11"
+        izz="3.5946633875632E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/rf3_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/rf3_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rf3_joint"
+    type="fixed">
+    <origin
+      xyz="0.0022471 -0.0041023 -0.1041"
+      rpy="0 0 0" />
+    <parent
+      link="rf2_link" />
+    <child
+      link="rf3_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rb_link">
+    <inertial>
+      <origin
+        xyz="0.0411894863695687 -0.0263184620426003 0.000738941380375576"
+        rpy="0 0 0" />
+      <mass
+        value="0.0457711594622061" />
+      <inertia
+        ixx="5.8005790842666E-06"
+        ixy="4.47933261834848E-08"
+        ixz="-1.1155744255817E-07"
+        iyy="1.83257632447727E-05"
+        iyz="1.15789931546228E-07"
+        izz="1.64800569580603E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/rb_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/rb_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rb_joint"
+    type="revolute">
+    <origin
+      xyz="-0.14905 -0.0340037258178606 -0.0101001390104264"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rb_link" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rb1_link">
+    <inertial>
+      <origin
+        xyz="0.00132758814972594 -0.0013841219626979 -0.0484532849310329"
+        rpy="0 0 0" />
+      <mass
+        value="0.019695847303043" />
+      <inertia
+        ixx="2.88957596600225E-05"
+        ixy="-9.10192919650103E-09"
+        ixz="7.13941160570765E-07"
+        iyy="2.97176911013005E-05"
+        iyz="3.66203860974863E-07"
+        izz="1.00802266760689E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/rb1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/rb1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rb1_joint"
+    type="revolute">
+    <origin
+      xyz="0.0261000000000121 -0.024844182919385 -0.000372244899679972"
+      rpy="0 0 0" />
+    <parent
+      link="rb_link" />
+    <child
+      link="rb1_link" />
+    <axis
+      xyz="0 0.999915844557343 0.0129731955653438" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rb2_link">
+    <inertial>
+      <origin
+        xyz="8.76219255945831E-05 -0.00315564506215645 -0.0409285811956291"
+        rpy="0 0 0" />
+      <mass
+        value="0.00817653849269387" />
+      <inertia
+        ixx="1.02252977553022E-05"
+        ixy="2.54166186180722E-19"
+        ixz="-7.08204063162027E-18"
+        iyy="1.02470762038086E-05"
+        iyz="3.61311101742402E-07"
+        izz="1.65794065502392E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/rb2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/rb2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rb2_joint"
+    type="revolute">
+    <origin
+      xyz="0.00259755916284909 -0.00285720746757014 -0.105065322967171"
+      rpy="0 0 0" />
+    <parent
+      link="rb1_link" />
+    <child
+      link="rb2_link" />
+    <axis
+      xyz="0 0.999915844557342 -0.012973195565345" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rb3_link">
+    <inertial>
+      <origin
+        xyz="-7.14872605556138E-13 -1.00953533414272E-05 0.000778104647540134"
+        rpy="0 0 0" />
+      <mass
+        value="0.000109464869023518" />
+      <inertia
+        ixx="2.47390291896578E-09"
+        ixy="-8.03689207760127E-24"
+        ixz="7.84563153546021E-22"
+        iyy="1.88276234738097E-09"
+        iyz="-2.22191639335186E-11"
+        izz="3.59502776984605E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/rb3_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/rb3_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rb3_joint"
+    type="fixed">
+    <origin
+      xyz="8.76219262720968E-05 -0.00365133832138143 -0.103981239766041"
+      rpy="0 0 0" />
+    <parent
+      link="rb2_link" />
+    <child
+      link="rb3_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="lb_link">
+    <inertial>
+      <origin
+        xyz="0.0411894863700732 0.0263239831472997 0.000505360799620241"
+        rpy="0 0 0" />
+      <mass
+        value="0.0457711593951246" />
+      <inertia
+        ixx="5.80020199861806E-06"
+        ixy="-4.56976122941878E-08"
+        ixz="-1.07315166440331E-07"
+        iyy="1.83235630753893E-05"
+        iyz="-1.32142262607926E-07"
+        izz="1.64826342003956E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/lb_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0980392156862745 0.0980392156862745 0.0980392156862745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/lb_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lb_joint"
+    type="revolute">
+    <origin
+      xyz="-0.14905 0.0340041681403332 -0.0101001740368266"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lb_link" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="lb1_link">
+    <inertial>
+      <origin
+        xyz="0.00244301792193641 0.000955002234767507 -0.0484219275896185"
+        rpy="0 0 0" />
+      <mass
+        value="0.019695847303043" />
+      <inertia
+        ixx="2.88357682642712E-05"
+        ixy="3.18098685255187E-08"
+        ixz="1.47059699290799E-06"
+        iyy="2.97089593882337E-05"
+        iyz="-6.19604386992237E-07"
+        izz="1.07674577642503E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/lb1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/lb1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lb1_joint"
+    type="revolute">
+    <origin
+      xyz="0.0260999999999995 0.0248399013528206 -0.000592698894318884"
+      rpy="0 0 0" />
+    <parent
+      link="lb_link" />
+    <child
+      link="lb1_link" />
+    <axis
+      xyz="0 0.999761347813009 0.0218459932050663" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="lb2_link">
+    <inertial>
+      <origin
+        xyz="0.000583216542495379 0.00279076953087293 -0.0410258517192321"
+        rpy="0 0 0" />
+      <mass
+        value="0.00817653849269374" />
+      <inertia
+        ixx="1.02224919423556E-05"
+        ixy="7.51683298724609E-09"
+        ixz="1.67919766482273E-07"
+        iyy="1.02398727192404E-05"
+        iyz="-4.50619166346111E-07"
+        izz="1.75803363016799E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/lb2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/lb2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lb2_joint"
+    type="revolute">
+    <origin
+      xyz="0.00544229229119725 0.00192863337347882 -0.104908340746083"
+      rpy="0 0 0" />
+    <parent
+      link="lb1_link" />
+    <child
+      link="lb2_link" />
+    <axis
+      xyz="0 0.999761347813009 -0.0218459932050723" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="lb3_link">
+    <inertial>
+      <origin
+        xyz="-1.29912212900041E-05 1.69975302588138E-05 0.000777875997779703"
+        rpy="0 0 0" />
+      <mass
+        value="0.000109464869023519" />
+      <inertia
+        ixx="2.47421546678879E-09"
+        ixy="-4.08933154000196E-13"
+        ixz="-1.87144414714726E-11"
+        iyy="1.8832913698126E-09"
+        iyz="3.74029778641264E-11"
+        izz="3.59418619959149E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/lb3_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/lb3_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lb3_joint"
+    type="fixed">
+    <origin
+      xyz="0.00163565806616556 0.00272710242669384 -0.104071642837333"
+      rpy="0 0 0" />
+    <parent
+      link="lb2_link" />
+    <child
+      link="lb3_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="camera_link">
+    <inertial>
+      <origin
+        xyz="0.166043176512695 0.00171290851049758 2.52573190186932E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0375090863080631" />
+      <inertia
+        ixx="2.321574839669E-05"
+        ixy="4.51123887935605E-08"
+        ixz="-1.30126348097841E-08"
+        iyy="2.09772639571916E-06"
+        iyz="-8.02354190094558E-09"
+        izz="2.19130426942268E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/camera_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/camera_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="lidar_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/lidar_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kalbv2/meshes/lidar_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  
+  
+  <!--transmissions-->
+  <transmission name="lf_hip_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lf_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="lf_joint_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="lf1_upper_leg_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lf1_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="lf1_upper_leg_joint_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="lf2_lower_leg_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lf2_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="lf2_lower_joint_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  
+  <transmission name="rf_hip_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rf_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rf_joint_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="rf1_upper_leg_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rf1_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rf1_upper_leg_joint_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="rf2_lower_leg_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rf2_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rf2_lower_joint_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  
+  <transmission name="rb_hip_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rb_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rb_joint_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="rb1_upper_leg_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rb1_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rb1_upper_leg_joint_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="rb2_lower_leg_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rb2_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rb2_lower_joint_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  
+  <transmission name="lb_hip_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lb_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="lb_joint_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="lb1_upper_leg_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lb1_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="lb1_upper_leg_joint_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="lb2_lower_leg_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lb2_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="lb2_lower_joint_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <!--gazebo refrence-->
+  
+  <!--gazebo plugins-->
+   <gazebo>
+    <plugin filename="libgazebo_ros_p3d.so" name="p3d_base_controller">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>10.0</updateRate>
+      <bodyName>base_link</bodyName>
+      <topicName>odom/ground_truth</topicName>
+      <gaussianNoise>0.01</gaussianNoise>
+      <frameName>world</frameName>
+      <xyzOffsets>0 0 0</xyzOffsets>
+      <rpyOffsets>0 0 0</rpyOffsets>
+    </plugin>
+  </gazebo>
+  
+<gazebo>
+    <plugin filename="libgazebo_ros_p3d.so" name="p3d_base_controller">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>10.0</updateRate>
+      <bodyName>base_link</bodyName>
+      <topicName>odom/ground_truth</topicName>
+      <gaussianNoise>0.01</gaussianNoise>
+      <frameName>world</frameName>
+      <xyzOffsets>0 0 0</xyzOffsets>
+      <rpyOffsets>0 0 0</rpyOffsets>
+    </plugin>
+  </gazebo>
+  <gazebo>
+    <plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control">
+      <legacyModeNS>true</legacyModeNS>
+    </plugin>
+  </gazebo>
+</robot>
