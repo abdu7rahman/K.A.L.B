@@ -20,6 +20,7 @@ Tested on:
 
 - Ubuntu 16.04 (ROS Kinetic)
 - Ubuntu 18.04 (ROS Melodic)
+- Ubuntu 20.04 (ROS Noetic)
 
 ## 1. Installation
 
