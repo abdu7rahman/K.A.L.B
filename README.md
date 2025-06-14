@@ -1,8 +1,8 @@
 ## Demo Video  
 
 <p align="center">
-  <a href="https://youtu.be/ESjXvtUxYeM?si=dtkqx3pbGBjE8fgM">
-    <img src="https://img.youtube.com/vi/ESjXvtUxYeM?si=dtkqx3pbGBjE8fgM/0.jpg" alt="Watch the video" width="600"/>
+  <a href="https://youtu.be/ESjXvtUxYeM">
+    <img src="https://img.youtube.com/vi/ESjXvtUxYeM/maxresdefault.jpg" alt="Watch the video" width="600"/>
   </a>
 </p>
 
